@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI-Powered Fake News Detection | Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <div class="logo-badge">R</div>
+      <div>
+        <div class="logo-text-main">Renuka Cholleti</div>
+        <div class="logo-text-sub">Project • Fake News Detection</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="page">
+  <section>
+    <h2 class="section-title"><span></span> AI-Powered Fake News Detection System</h2>
+    <div class="card">
+      <h3>Overview</h3>
+      <p>
+        This project is an NLP-based machine learning system that classifies news articles as real or fake.
+        It uses text preprocessing and supervised learning models to detect misinformation.
+      </p>
+
+      <h3 style="margin-top: 14px;">Problem Statement</h3>
+      <p>
+        With the rapid spread of information online, fake news has become a serious issue. Manual verification
+        is time-consuming, and automated systems are needed to assist in identifying misleading content.
+      </p>
+
+      <h3 style="margin-top: 14px;">Tech Stack</h3>
+      <div class="pill-list">
+        <span class="pill">Python</span>
+        <span class="pill">NLP</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">NumPy</span>
+      </div>
+
+      <h3 style="margin-top: 14px;">Approach</h3>
+      <ul>
+        <li>Collected and used a labeled dataset of real and fake news articles.</li>
+        <li>Applied text preprocessing: tokenization, lowercasing, stop-word removal, and vectorization.</li>
+        <li>Trained machine learning models on vectorized news text features.</li>
+        <li>Evaluated model performance using metrics like accuracy and F1-score.</li>
+      </ul>
+
+      <h3 style="margin-top: 14px;">Key Features</h3>
+      <ul>
+        <li>Automatically predicts whether a news article is real or fake based on its content.</li>
+        <li>Improves trust in information by flagging potentially misleading news.</li>
+        <li>Modular pipeline for easy experimentation with different ML models.</li>
+      </ul>
+
+      <h3 style="margin-top: 14px;">What I Learned</h3>
+      <ul>
+        <li>End-to-end NLP pipelines and text classification.</li>
+        <li>Practical usage of scikit-learn for supervised learning.</li>
+        <li>How to evaluate and compare machine learning models.</li>
+      </ul>
+
+      <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="https://github.com/Renuka968/fake-news-detector" target="_blank" class="btn btn-primary">View on GitHub</a>
+        <a href="projects.html" class="btn btn-ghost">Back to Projects</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> Renuka Cholleti</div>
+  <div class="footer-links">
+    <span>NLP • Fake News Detection</span>
+  </div>
+</footer>
+
+<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
 
