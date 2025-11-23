@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI-Powered Medical Diagnosis Tool | Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <div class="logo-badge">R</div>
+      <div>
+        <div class="logo-text-main">Renuka Cholleti</div>
+        <div class="logo-text-sub">Project • Medical Diagnosis</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="page">
+  <section>
+    <h2 class="section-title"><span></span> AI-Powered Medical Diagnosis Tool</h2>
+    <div class="card">
+      <h3>Overview</h3>
+      <p>
+        This project is an AI-based system designed to assist in early disease prediction using patient data.
+        It helps in assessing risk levels and supports proactive healthcare decisions.
+      </p>
+
+      <h3 style="margin-top: 14px;">Problem Statement</h3>
+      <p>
+        Many diseases can be better managed when detected early. With large volumes of patient data available,
+        AI models can help in predicting health risks more efficiently.
+      </p>
+
+      <h3 style="margin-top: 14px;">Tech Stack</h3>
+      <div class="pill-list">
+        <span class="pill">Python</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">Data Visualization</span>
+      </div>
+
+      <h3 style="margin-top: 14px;">Approach</h3>
+      <ul>
+        <li>Preprocessed patient datasets including clinical parameters.</li>
+        <li>Performed exploratory data analysis and feature selection.</li>
+        <li>Trained machine learning models to predict the likelihood of specific diseases.</li>
+        <li>Evaluated model performance using appropriate evaluation metrics.</li>
+      </ul>
+
+      <h3 style="margin-top: 14px;">Key Features</h3>
+      <ul>
+        <li>Predicts disease risk based on input health parameters.</li>
+        <li>Can be extended into a decision support tool for doctors and patients.</li>
+        <li>Demonstrates responsible use of AI in healthcare applications.</li>
+      </ul>
+
+      <h3 style="margin-top: 14px;">What I Learned</h3>
+      <ul>
+        <li>Handling structured healthcare data and dealing with sensitive domains.</li>
+        <li>Building and evaluating predictive models for classification tasks.</li>
+        <li>Understanding the importance of accuracy, recall, and other metrics in healthcare AI.</li>
+      </ul>
+
+      <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="https://github.com/Renuka968/ai-medical-diagnosis" target="_blank" class="btn btn-primary">View on GitHub</a>
+        <a href="projects.html" class="btn btn-ghost">Back to Projects</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> Renuka Cholleti</div>
+  <div class="footer-links">
+    <span>Healthcare • AI & ML</span>
+  </div>
+</footer>
+
+<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
 
