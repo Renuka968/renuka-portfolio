@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Renuka Cholleti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <div class="logo-badge">R</div>
+      <div>
+        <div class="logo-text-main">Renuka Cholleti</div>
+        <div class="logo-text-sub">AI & ML Projects</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="page">
+  <section>
+    <h2 class="section-title"><span></span> Projects</h2>
+    <p style="margin-bottom: 16px;">
+      Here are some of my key AI & ML projects. Each project has a dedicated page with more details and a GitHub repository link.
+    </p>
+
+    <div class="grid-2">
+      <div class="card project-card">
+        <h3>Steganography-based Secure Communication System</h3>
+        <div class="card-sub">Secure communication through image-based steganography.</div>
+        <ul>
+          <li>Hides secret messages inside images without visibly changing them.</li>
+          <li>Focuses on information security and data privacy.</li>
+        </ul>
+        <div class="project-footer">
+          <a href="project-steganography.html" class="btn btn-small btn-ghost">View Details</a>
+          <a href="https://github.com/Renuka968/STEGANOGRAPHY" target="_blank" class="btn btn-small btn-primary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>AI-Powered Fake News Detection System</h3>
+        <div class="card-sub">NLP + machine learning for fake news classification.</div>
+        <ul>
+          <li>Processes news articles and flags them as real or fake.</li>
+          <li>Uses text preprocessing and ML models for classification.</li>
+        </ul>
+        <div class="project-footer">
+          <a href="project-fake-news.html" class="btn btn-small btn-ghost">View Details</a>
+          <a href="https://github.com/Renuka968/fake-news-detector" target="_blank" class="btn btn-small btn-primary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>AI-Powered Medical Diagnosis Tool</h3>
+        <div class="card-sub">Data-driven health risk prediction.</div>
+        <ul>
+          <li>Predicts the likelihood of diseases using patient data.</li>
+          <li>Supports proactive decision-making in healthcare.</li>
+        </ul>
+        <div class="project-footer">
+          <a href="project-medical-ai.html" class="btn btn-small btn-ghost">View Details</a>
+          <a href="https://github.com/Renuka968/ai-medical-diagnosis" target="_blank" class="btn btn-small btn-primary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>More Experiments & Mini Projects</h3>
+        <div class="card-sub">Practice work, notebooks, and experiments.</div>
+        <p>
+          In addition to these major projects, I regularly experiment with datasets, visualizations, and model training
+          to improve my understanding of AI & ML concepts.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> Renuka Cholleti</div>
+  <div class="footer-links">
+    <span>AI & ML Projects Portfolio</span>
+  </div>
+</footer>
+
+<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
 
