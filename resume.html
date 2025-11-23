@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume | Renuka Cholleti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <div class="logo-badge">R</div>
+      <div>
+        <div class="logo-text-main">Renuka Cholleti</div>
+        <div class="logo-text-sub">AI & ML • Student Portfolio</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
 
+<main class="page">
+  <section>
+    <h2 class="section-title"><span></span> Resume</h2>
+    <div class="card">
+      <p>
+        You can download my full academic portfolio resume in PDF format. It includes my education,
+        skills, internships, certifications, and project summaries.
+      </p>
+      <p style="margin-top: 8px;">
+        Recruiters and faculty members are welcome to review it for internships, placements, and academic opportunities.
+      </p>
+      <a href="assets/Renuka_Academic_Portfolio.pdf" class="btn btn-primary" download>
+        Download Resume (PDF)
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> Renuka Cholleti</div>
+  <div class="footer-links">
+    <span>Resume • Academic Portfolio</span>
+  </div>
+</footer>
+
+<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
