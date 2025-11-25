@@ -5,8 +5,116 @@
   <title>Contact | Renuka Cholleti</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Advanced UI Styling -->
+  <style>
+    /* Glassmorphic Card */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 30px;
+      border-radius: 18px;
+      margin-top: 20px;
+      box-shadow: 0 0 25px rgba(109, 93, 252, 0.18);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    /* Floating Label Wrapper */
+    .input-group {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 15px 12px;
+      background: #101425;
+      border: 1.5px solid #2b3149;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-field:focus {
+      border-color: #6d5dfc;
+      box-shadow: 0 0 10px #6d5dfc99;
+    }
+
+    /* Floating label */
+    .input-label {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #9aa0b8;
+      font-size: 14px;
+      transition: 0.3s ease;
+      pointer-events: none;
+    }
+
+    .input-field:focus + .input-label,
+    .input-field:not(:placeholder-shown) + .input-label {
+      top: -8px;
+      left: 8px;
+      background: #0b0f1e;
+      padding: 0 6px;
+      font-size: 12px;
+      color: #6d5dfc;
+    }
+
+    /* Gradient Submit Button */
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #6d5dfc, #4b37e6);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(109, 93, 252, 0.4);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 18px rgba(109, 93, 252, 0.7);
+    }
+
+    /* Success Popup */
+    #success-popup {
+      display: none;
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #00c853;
+      padding: 14px 20px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 0 18px #00c853aa;
+      animation: slideUp 0.6s ease-out;
+    }
+
+    /* Animations */
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
   <nav class="nav">
     <div class="logo">
@@ -26,48 +134,58 @@
 </header>
 
 <main class="page">
+
+  <!-- Contact Info (Same UI) -->
   <section>
     <h2 class="section-title"><span></span> Contact</h2>
     <div class="card">
-      <p>
-        I’m open to AI/ML internships, academic collaborations, and project opportunities.
-        Recruiters and faculty can reach me through the contact details below.
-      </p>
+      <p>I am open to AI/ML internships, academic collaborations, and project opportunities.</p>
 
       <ul class="contact-list" style="margin-top: 12px;">
-        <li><strong>Email:</strong> <a href="mailto:renukacholleti25@gmail.com">renukacholleti25@gmail.com</a></li>
+        <li><strong>Email:</strong> renukacholleti25@gmail.com</li>
         <li><strong>Phone:</strong> +91-9618840477</li>
         <li><strong>Location:</strong> Hyderabad, Telangana, India</li>
         <li><strong>GitHub:</strong> <a href="https://github.com/Renuka968" target="_blank">github.com/Renuka968</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/renuka-cholleti-841910271/" target="_blank">LinkedIn Profile</a></li>
+        <li><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/renuka-cholleti-841910271/" target="_blank">
+            LinkedIn Profile
+          </a>
+        </li>
       </ul>
-
-      <p style="margin-top: 16px;">
-        You can also include this portfolio link and my resume in your screening or academic evaluation
-        processes. I’m happy to share more details about any of the projects on request.
-      </p>
     </div>
   </section>
 
-  <!-- ✅✅ ASK ME A QUESTION FORM ADDED HERE -->
-  <section id="ask-question" style="margin-top: 24px;">
-    <h2 class="section-title"><span></span> Ask Me a Question</h2>
-    <div class="card">
-      <form action="mailto:renukacholleti25@gmail.com" method="POST" enctype="text/plain">
-        <label>Name</label><br>
-        <input type="text" name="name" required 
-               style="width:100%; padding:8px; margin-bottom:10px; border-radius:8px;"><br>
+  <!-- 🚀 Enhanced Contact Form -->
+  <section style="margin-top: 32px;">
+    <h2 class="section-title"><span></span> Send Me a Message</h2>
 
-        <label>Email</label><br>
-        <input type="email" name="email" required 
-               style="width:100%; padding:8px; margin-bottom:10px; border-radius:8px;"><br>
+    <div class="glass-card">
 
-        <label>Your Question</label><br>
-        <textarea name="question" rows="5" required 
-                  style="width:100%; padding:8px; margin-bottom:10px; border-radius:8px;"></textarea><br>
+      <form action="https://api.web3forms.com/submit" method="POST">
 
-        <button type="submit" class="btn btn-primary" 
-                style="width:100%;">Send Question</button>
+        <input type="hidden" name="access_key" value="18aa8dda-e775-4e61-bca6-fcc3cbea8b4a">
+
+        <!-- Floating Name -->
+        <div class="input-group">
+          <input type="text" name="name" required class="input-field" placeholder=" " />
+          <label class="input-label">Your Name</label>
+        </div>
+
+        <!-- Floating Email -->
+        <div class="input-group">
+          <input type="email" name="email" required class="input-field" placeholder=" " />
+          <label class="input-label">Your Email</label>
+        </div>
+
+        <!-- Floating Message -->
+        <div class="input-group">
+          <textarea name="message" rows="5" required class="input-field" placeholder=" "></textarea>
+          <label class="input-label">Your Message</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Send Message 🚀</button>
+
       </form>
     </div>
   </section>
@@ -82,8 +200,22 @@
 </footer>
 
 <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+<!-- Success Popup -->
+<div id="success-popup">✅ Message Sent Successfully!</div>
+
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Success Popup Animation
+  document.querySelector("form").addEventListener("submit", function () {
+    const popup = document.getElementById("success-popup");
+    popup.style.display = "block";
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 3000);
+  });
 </script>
+
 </body>
 </html>
