@@ -32,13 +32,16 @@
       Here are some of my key AI & ML projects. Each project has a dedicated page with more details and a GitHub repository link.
     </p>
 
+    <!-- PROJECT GRID START -->
     <div class="grid-2">
+
+      <!-- Steganography -->
       <div class="card project-card">
         <h3>Steganography-based Secure Communication System</h3>
-        <div class="card-sub">Secure communication through image-based steganography.</div>
+        <div class="card-sub">Secure communication using image-based steganography.</div>
         <ul>
-          <li>Hides secret messages inside images without visibly changing them.</li>
-          <li>Focuses on information security and data privacy.</li>
+          <li>Hides encrypted messages inside images using LSB algorithm.</li>
+          <li>Focused on cybersecurity and data privacy.</li>
         </ul>
         <div class="project-footer">
           <a href="project-steganography.html" class="btn btn-small btn-ghost">View Details</a>
@@ -46,12 +49,13 @@
         </div>
       </div>
 
+      <!-- Fake News Detector -->
       <div class="card project-card">
         <h3>AI-Powered Fake News Detection System</h3>
-        <div class="card-sub">NLP + machine learning for fake news classification.</div>
+        <div class="card-sub">NLP + Machine Learning for fake news classification.</div>
         <ul>
           <li>Processes news articles and flags them as real or fake.</li>
-          <li>Uses text preprocessing and ML models for classification.</li>
+          <li>Uses text preprocessing and ML models like Naive Bayes/LogReg.</li>
         </ul>
         <div class="project-footer">
           <a href="project-fake-news.html" class="btn btn-small btn-ghost">View Details</a>
@@ -59,12 +63,41 @@
         </div>
       </div>
 
+      <!-- DailyCap -->
+      <div class="card project-card">
+        <h3>DailyCap – Smart Expense Tracker</h3>
+        <div class="card-sub">Modern expense tracking & financial analytics.</div>
+        <ul>
+          <li>Tracks expenses with categories, budgets, and insights.</li>
+          <li>Visualizes spending trends using charts.</li>
+        </ul>
+        <div class="project-footer">
+          <a href="project-dailycap.html" class="btn btn-small btn-ghost">View Details</a>
+          <a href="https://github.com/Renuka968/DailyCap" target="_blank" class="btn btn-small btn-primary">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Recuron -->
+      <div class="card project-card">
+        <h3>Recuron – AI Resume Shortlisting Tool</h3>
+        <div class="card-sub">AI + NLP powered resume screening system.</div>
+        <ul>
+          <li>Matches resumes with job descriptions using NLP similarity.</li>
+          <li>Generates rank scores for candidate shortlisting.</li>
+        </ul>
+        <div class="project-footer">
+          <a href="project-recuron.html" class="btn btn-small btn-ghost">View Details</a>
+          <a href="https://github.com/Renuka968/Recuron" target="_blank" class="btn btn-small btn-primary">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Medical Diagnosis -->
       <div class="card project-card">
         <h3>AI-Powered Medical Diagnosis Tool</h3>
         <div class="card-sub">Data-driven health risk prediction.</div>
         <ul>
           <li>Predicts the likelihood of diseases using patient data.</li>
-          <li>Supports proactive decision-making in healthcare.</li>
+          <li>Supports decision-making in healthcare.</li>
         </ul>
         <div class="project-footer">
           <a href="project-medical-ai.html" class="btn btn-small btn-ghost">View Details</a>
@@ -72,15 +105,17 @@
         </div>
       </div>
 
+      <!-- More Projects -->
       <div class="card project-card">
         <h3>More Experiments & Mini Projects</h3>
-        <div class="card-sub">Practice work, notebooks, and experiments.</div>
+        <div class="card-sub">Practice work, notebooks, and model experiments.</div>
         <p>
-          In addition to these major projects, I regularly experiment with datasets, visualizations, and model training
-          to improve my understanding of AI & ML concepts.
+          I frequently explore datasets, build ML models, create dashboards, and work on notebooks to improve my AI & ML skills.
         </p>
       </div>
+
     </div>
+    <!-- PROJECT GRID END -->
   </section>
 </main>
 
@@ -95,8 +130,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
-<!-- ✅✅ CHATBOT ADDED BELOW -->
 
 <!-- CHATBOT BUTTON -->
 <div id="chatbot-btn" 
@@ -123,7 +156,7 @@
 <script>
   const botAnswers = {
     "skills": "I work with Python, Machine Learning, NLP, scikit-learn, MySQL, MongoDB, and more.",
-    "projects": "I have 3 major projects: Steganography System, Fake News Detector, and Medical Diagnosis Tool.",
+    "projects": "I have major projects including Steganography, Fake News Detector, DailyCap, Recuron, and Medical Diagnosis.",
     "internship": "I completed internships under TechSaksham and Shell Skills4Future.",
     "education": "I am pursuing B.Tech CSE (AI & ML) at Sphoorthy Engineering College.",
     "contact": "You can reach me at renukacholleti25@gmail.com."
@@ -136,7 +169,7 @@
 
   function chatbotSend() {
     const input = document.getElementById("chat-input").value.toLowerCase();
-    let response = "I'm not sure about that, but you can check my Projects or Contact page!";
+    let response = "I'm not sure about that, but check the Projects or Contact page!";
     
     for (let key in botAnswers) {
       if (input.includes(key)) {
