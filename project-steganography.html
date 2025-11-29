@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Steganography-based Secure Communication | Project</title>
+  <title>Steganography – Secure Communication System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+
 <header>
   <nav class="nav">
     <div class="logo">
       <div class="logo-badge">R</div>
       <div>
         <div class="logo-text-main">Renuka Cholleti</div>
-        <div class="logo-text-sub">Project • Steganography</div>
+        <div class="logo-text-sub">AI & ML Projects</div>
       </div>
     </div>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -28,61 +29,33 @@
 <main class="page">
   <section>
     <h2 class="section-title"><span></span> Steganography-based Secure Communication System</h2>
-    <div class="card">
-      <h3>Overview</h3>
-      <p>
-        This project focuses on secure data transmission using image steganography. The system hides confidential
-        information inside digital images so that the presence of the message is not obvious to a viewer.
-      </p>
 
-      <h3 style="margin-top: 14px;">Objectives</h3>
-      <ul>
-        <li>Enable secure, covert communication by embedding secret messages inside normal-looking images.</li>
-        <li>Preserve the visual quality of the carrier image so that changes are hard to detect.</li>
-        <li>Provide a simple interface for encoding and decoding hidden messages.</li>
-      </ul>
+    <p class="project-desc">
+      This project hides secret text inside images using the Least Significant Bit (LSB) technique.
+      It helps ensure secure and private communication by embedding encrypted messages without
+      visibly altering the image.
+    </p>
 
-      <h3 style="margin-top: 14px;">Tech Stack</h3>
-      <div class="pill-list">
-        <span class="pill">Python</span>
-        <span class="pill">Image Processing</span>
-        <span class="pill">Steganography</span>
-        <span class="pill">Security</span>
-      </div>
+    <h3 class="subheading">🔹 Features</h3>
+    <ul class="project-list">
+      <li>Embed secret text inside images using LSB algorithm.</li>
+      <li>Retrieve hidden text securely using the decoder.</li>
+      <li>Supports PNG/JPEG images.</li>
+      <li>Simple and clean Python implementation.</li>
+    </ul>
 
-      <h3 style="margin-top: 14px;">Key Features</h3>
-      <ul>
-        <li>Encodes text messages into image pixels using steganographic techniques.</li>
-        <li>Decodes the hidden message from the modified image using the corresponding algorithm.</li>
-        <li>Maintains image quality while embedding data.</li>
-      </ul>
+    <h3 class="subheading">🔹 Tech Stack</h3>
+    <ul class="project-list">
+      <li>Python</li>
+      <li>OpenCV</li>
+      <li>NumPy</li>
+    </ul>
 
-      <h3 style="margin-top: 14px;">What I Learned</h3>
-      <ul>
-        <li>Core concepts of steganography and information security.</li>
-        <li>Working with image data and pixel-level manipulations in Python.</li>
-        <li>Designing secure communication workflows.</li>
-      </ul>
+    <h3 class="subheading">🔹 GitHub</h3>
+    <a href="https://github.com/Renuka968/STEGANOGRAPHY.git" target="_blank" class="btn btn-primary">View on GitHub</a>
 
-      <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
-        <a href="https://github.com/Renuka968/STEGANOGRAPHY" target="_blank" class="btn btn-primary">View on GitHub</a>
-        <a href="projects.html" class="btn btn-ghost">Back to Projects</a>
-      </div>
-    </div>
   </section>
 </main>
 
-<footer>
-  <div>© <span id="year"></span> Renuka Cholleti</div>
-  <div class="footer-links">
-    <span>Secure Communication • Steganography</span>
-  </div>
-</footer>
-
-<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
-
