@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/style.css" />
 
-  <!-- Advanced UI Styling -->
   <style>
-    /* Glassmorphic Card */
     .glass-card {
       background: rgba(255, 255, 255, 0.06);
       backdrop-filter: blur(12px);
@@ -20,11 +18,7 @@
       animation: fadeIn 0.8s ease-out;
     }
 
-    /* Floating Label Wrapper */
-    .input-group {
-      position: relative;
-      margin: 20px 0;
-    }
+    .input-group { position: relative; margin: 20px 0; }
 
     .input-field {
       width: 100%;
@@ -43,7 +37,6 @@
       box-shadow: 0 0 10px #6d5dfc99;
     }
 
-    /* Floating label */
     .input-label {
       position: absolute;
       left: 12px;
@@ -65,7 +58,6 @@
       color: #6d5dfc;
     }
 
-    /* Gradient Submit Button */
     .submit-btn {
       width: 100%;
       padding: 14px;
@@ -85,7 +77,6 @@
       box-shadow: 0 0 18px rgba(109, 93, 252, 0.7);
     }
 
-    /* Success Popup */
     #success-popup {
       display: none;
       position: fixed;
@@ -100,7 +91,6 @@
       animation: slideUp 0.6s ease-out;
     }
 
-    /* Animations */
     @keyframes slideUp {
       from { transform: translateY(40px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
@@ -117,12 +107,7 @@
 
 <header>
   <nav class="nav">
-    <div class="logo">
-      <div>
-        <div class="logo-text-main">Renuka Cholleti</div>
-        <div class="logo-text-sub">Get in Touch</div>
-      </div>
-    </div>
+    <strong>Renuka</strong>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -134,9 +119,8 @@
 
 <main class="page">
 
-  <!-- Contact Info (Same UI) -->
   <section>
-    <h2 class="section-title"><span></span> Contact</h2>
+    <h2 class="section-title">Contact</h2>
     <div class="card">
       <p>I am open to AI/ML internships, academic collaborations, and project opportunities.</p>
 
@@ -145,46 +129,36 @@
         <li><strong>Phone:</strong> +91-9618840477</li>
         <li><strong>Location:</strong> Hyderabad, Telangana, India</li>
         <li><strong>GitHub:</strong> <a href="https://github.com/Renuka968" target="_blank">github.com/Renuka968</a></li>
-        <li><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/renuka-cholleti-841910271/" target="_blank">
-            LinkedIn Profile
-          </a>
+        <li><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/renuka-cholleti-841910271/" target="_blank">LinkedIn Profile</a>
         </li>
       </ul>
     </div>
   </section>
 
-  <!-- 🚀 Enhanced Contact Form -->
   <section style="margin-top: 32px;">
-    <h2 class="section-title"><span></span> Send Me a Message</h2>
+    <h2 class="section-title">Send Me a Message</h2>
 
     <div class="glass-card">
-
       <form action="https://api.web3forms.com/submit" method="POST">
-
         <input type="hidden" name="access_key" value="18aa8dda-e775-4e61-bca6-fcc3cbea8b4a">
 
-        <!-- Floating Name -->
         <div class="input-group">
           <input type="text" name="name" required class="input-field" placeholder=" " />
           <label class="input-label">Your Name</label>
         </div>
 
-        <!-- Floating Email -->
         <div class="input-group">
           <input type="email" name="email" required class="input-field" placeholder=" " />
           <label class="input-label">Your Email</label>
         </div>
 
-        <!-- Floating Message -->
         <div class="input-group">
           <textarea name="message" rows="5" required class="input-field" placeholder=" "></textarea>
           <label class="input-label">Your Message</label>
         </div>
 
-        <!-- Submit Button -->
         <button type="submit" class="submit-btn">Send Message 🚀</button>
-
       </form>
     </div>
   </section>
@@ -199,20 +173,15 @@
 </footer>
 
 <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
-
-<!-- Success Popup -->
 <div id="success-popup">✅ Message Sent Successfully!</div>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  // Success Popup Animation
   document.querySelector("form").addEventListener("submit", function () {
     const popup = document.getElementById("success-popup");
     popup.style.display = "block";
-    setTimeout(() => {
-      popup.style.display = "none";
-    }, 3000);
+    setTimeout(() => popup.style.display = "none", 3000);
   });
 </script>
 
