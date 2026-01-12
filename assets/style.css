@@ -110,3 +110,56 @@ h2 {
   font-size: 2rem;
   margin-bottom: 24px;
 }
+.muted {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.resume-card {
+  background: linear-gradient(145deg, #121a3a, #0e1327);
+  padding: 32px;
+  border-radius: 20px;
+  margin-top: 32px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.resume-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.cert h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.cert p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cert span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
