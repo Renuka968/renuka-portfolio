@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
 }
 
+/* Navigation */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -43,12 +44,14 @@ body {
   color: white;
 }
 
+/* Sections */
 .section {
   padding: 100px 64px;
   max-width: 1100px;
   margin: auto;
 }
 
+/* Hero */
 .hero h1 {
   font-size: 3rem;
   font-weight: 600;
@@ -66,6 +69,7 @@ body {
   max-width: 600px;
 }
 
+/* Buttons */
 .btn {
   margin-top: 32px;
   padding: 12px 28px;
@@ -87,6 +91,7 @@ body {
   box-shadow: 0 10px 30px rgba(124,124,255,0.3);
 }
 
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -94,22 +99,20 @@ body {
   margin-top: 48px;
 }
 
+/* Base card */
 .card {
-  background: var(--card);
   padding: 24px;
   border-radius: 20px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-
+/* Headings */
 h2 {
   font-size: 2rem;
   margin-bottom: 24px;
 }
+
+/* Resume */
 .muted {
   color: var(--muted);
   margin-top: 8px;
@@ -126,6 +129,11 @@ h2 {
 .resume-card h3 {
   font-size: 1.4rem;
   margin-bottom: 8px;
+}
+
+/* Certifications */
+.cert {
+  background: var(--card);
 }
 
 .cert h4 {
@@ -145,6 +153,7 @@ h2 {
   color: var(--muted);
 }
 
+/* Links */
 .link {
   display: inline-block;
   margin-top: 10px;
@@ -157,9 +166,37 @@ h2 {
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   padding: 32px;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* Projects visibility fix */
+.link-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.link-card h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.link-card p {
+  color: #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.link-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(124, 124, 255, 0.15);
+  border-color: rgba(124, 124, 255, 0.5);
+  box-shadow: 0 25px 60px rgba(124,124,255,0.35);
 }
