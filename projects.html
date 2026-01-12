@@ -1,173 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projects | Renuka Cholleti</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header>
-  <nav class="nav">
-    <div class="logo">
-      <div class="logo-badge">R</div>
-      <div>
-        <div class="logo-text-main">Renuka Cholleti</div>
-        <div class="logo-text-sub">AI & ML Projects</div>
-      </div>
-    </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-</header>
 
-<main class="page">
-  <section>
-    <h2 class="section-title"><span></span> Projects</h2>
-    <p style="margin-bottom: 16px;">
-      Here are some of my key AI & ML projects. Each project has a dedicated page with more details and a GitHub repository link.
-    </p>
-
-    <!-- PROJECT GRID -->
-    <div class="grid-2">
-
-      <!-- Steganography -->
-      <div class="card project-card">
-        <h3>Steganography-based Secure Communication System</h3>
-        <div class="card-sub">Secure communication using image-based steganography.</div>
-        <ul>
-          <li>Hides encrypted messages inside images using LSB algorithm.</li>
-          <li>Focused on cybersecurity and data privacy.</li>
-        </ul>
-        <div class="project-footer">
-          <a href="project-steganography.html" class="btn btn-small btn-ghost">View Details</a>
-          <a href="https://github.com/Renuka968/STEGANOGRAPHY.git" target="_blank" class="btn btn-small btn-primary">GitHub</a>
-        </div>
-      </div>
-
-      <!-- Fake News Detector -->
-      <div class="card project-card">
-        <h3>AI-Powered Fake News Detection System</h3>
-        <div class="card-sub">NLP + Machine Learning for fake news classification.</div>
-        <ul>
-          <li>Processes news articles and flags them as real or fake.</li>
-          <li>Uses text preprocessing and ML models like Naive Bayes/LogReg.</li>
-        </ul>
-        <div class="project-footer">
-          <a href="project-fake-news.html" class="btn btn-small btn-ghost">View Details</a>
-          <a href="https://github.com/Renuka968/fake-news-detector.git" target="_blank" class="btn btn-small btn-primary">GitHub</a>
-        </div>
-      </div>
-
-      <!-- DailyCap -->
-      <div class="card project-card">
-        <h3>DailyCap – Smart Expense Tracker</h3>
-        <div class="card-sub">Modern expense tracking & financial analytics.</div>
-        <ul>
-          <li>Tracks expenses with categories, budgets, and insights.</li>
-          <li>Visualizes spending trends using charts.</li>
-        </ul>
-        <div class="project-footer">
-          <a href="project-dailycap.html" class="btn btn-small btn-ghost">View Details</a>
-          <a href="https://github.com/Renuka968/Dailycap-Expense-Tracker.git" target="_blank" class="btn btn-small btn-primary">GitHub</a>
-        </div>
-      </div>
-
-      <!-- Recuron -->
-      <div class="card project-card">
-        <h3>Recuron – AI Resume Shortlisting Tool</h3>
-        <div class="card-sub">AI + NLP powered resume screening system.</div>
-        <ul>
-          <li>Matches resumes with job descriptions using NLP similarity.</li>
-          <li>Generates rank scores for candidate shortlisting.</li>
-        </ul>
-        <div class="project-footer">
-          <a href="project-recuron.html" class="btn btn-small btn-ghost">View Details</a>
-          <a href="https://github.com/Renuka968/Recuron-AI-Resume-Shortlisting.git" target="_blank" class="btn btn-small btn-primary">GitHub</a>
-        </div>
-      </div>
-
-      <!-- More Projects -->
-      <div class="card project-card">
-        <h3>More Experiments & Mini Projects</h3>
-        <div class="card-sub">Practice work, notebooks, and model experiments.</div>
-        <p>
-          I frequently explore datasets, build ML models, create dashboards, and work on notebooks to improve my AI & ML skills.
-        </p>
-      </div>
-
-    </div>
-    <!-- END GRID -->
-
-  </section>
-</main>
-
-<footer>
-  <div>© <span id="year"></span> Renuka Cholleti</div>
-  <div class="footer-links">
-    <span>AI & ML Projects Portfolio</span>
+<div class="nav">
+  <strong>Renuka</strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Contact</a>
   </div>
-</footer>
-
-<button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-<!-- CHATBOT BUTTON -->
-<div id="chatbot-btn" 
-     style="position: fixed; bottom: 20px; right: 20px; background: #6d5dfc; 
-            color: white; padding: 14px 18px; border-radius: 50%; cursor:pointer;
-            box-shadow: 0 0 12px rgba(109,93,252,0.7); font-size:20px; text-align:center;">
-🤖
 </div>
 
-<!-- CHATBOT POPUP -->
-<div id="chatbot-box" 
-     style="position: fixed; bottom: 90px; right: 20px; width: 280px; 
-            background:#0b1020; border:1px solid #252b3f; border-radius:12px; 
-            display:none; padding:12px; color:white;">
-  <h4>Ask me anything!</h4>
-  <input id="chat-input" type="text" placeholder="Type a question..." 
-         style="width:100%; padding:8px; margin-top:8px; border-radius:8px;">
-  <button onclick="chatbotSend()" 
-          style="margin-top:8px; padding:8px 12px; border-radius:8px; 
-                 background:#6d5dfc; color:white; width:100%;">Send</button>
-  <p id="chat-response" style="margin-top:10px; font-size:13px; color:#a0a4b8;"></p>
-</div>
+<section class="section fade">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">DailyCap — Expense Tracker</div>
+    <div class="card">Recuron — AI Resume Screening</div>
+    <div class="card">Fake News Detection</div>
+    <div class="card">Secure Data Transmission (Steganography)</div>
+  </div>
+</section>
 
-<script>
-  const botAnswers = {
-    "skills": "I work with Python, Machine Learning, NLP, scikit-learn, MySQL, MongoDB, and more.",
-    "projects": "I have major projects including Steganography, Fake News Detector, DailyCap, and Recuron.",
-    "internship": "I completed internships under TechSaksham and Shell Skills4Future.",
-    "education": "I am pursuing B.Tech CSE (AI & ML) at Sphoorthy Engineering College.",
-    "contact": "You can reach me at renukacholleti25@gmail.com."
-  };
-
-  document.getElementById("chatbot-btn").onclick = function() {
-    const box = document.getElementById("chatbot-box");
-    box.style.display = box.style.display === "none" ? "block" : "none";
-  };
-
-  function chatbotSend() {
-    const input = document.getElementById("chat-input").value.toLowerCase();
-    let response = "I'm not sure about that, but check the Projects or Contact page!";
-    
-    for (let key in botAnswers) {
-      if (input.includes(key)) {
-        response = botAnswers[key];
-        break;
-      }
-    }
-
-    document.getElementById("chat-response").innerText = response;
-  }
-</script>
-
+<script src="assets/animations.js"></script>
 </body>
 </html>
